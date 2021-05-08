@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja en Google</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 id="title">¿Cómo puedes trabajar en Google?</h1>
+            <p id="description">Llena el formulario y si cumples con los requisitos espera a que te contacten.</p>
+        </header>
+        <form action="" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Nombre: <input type="text" name="name" id="name" placeholder="Ingrese tu nombre" required></label>
+            </div>
+            <div>
+                <label for="email" id="email-label">Correo electrónico: <input type="email"  id="email" name="email" placeholder="Ingrese tu correo" required></label>
+            </div>
+            <div>
+                <label for="number" id="number-label">Edad: <input type="number" id="number" min="18" max="99" name="age" placeholder=">= 18" required></label>
+            </div>
+            <div>
+                <p>Debes pertenecer a alguno de estos países</p>
+                <select name="country" id="dropdown" required>
+                    <option disabled selected value>Elige tu país</option>
+                    <option value="col">Colombia</option>
+                    <option value="esp">España</option>
+                    <option value="eeuu">Estados Unidos</option>
+                    <option value="rus">Russia</option>
+                </select>
+            </div>
+            <div>
+                <p>¿Te gustaria trabajar desde casa?</p>
+                <label><input type="radio" name="work-house" value="yes">Claro que sí!</label>
+                <label><input type="radio" name="work-house" value="jum">Lo dudo</label>
+                <label><input type="radio" name="work-house" value="not">No me interesa</label>
+            </div>
+            <div>
+                <p>¿Que lenguajes de programación domina?</p>
+                <label><input type="checkbox" name="lang" value="java">Java</label>
+                <label><input type="checkbox" name="lang" value="javascript">JavaScript</label>
+                <label><input type="checkbox" name="lang" value="pyton">Pyton</label>
+                <label><input type="checkbox" name="lang" value="c#">C#</label>
+                <label><input type="checkbox" name="lang" value="php">PHP</label>
+                <label><input type="checkbox" name="lang" value="c++">C++</label>
+                <label><input type="checkbox" name="lang" value="ruby">Ruby</label>
+                <label><input type="checkbox" name="lang" value="c">C</label>
+                <label><input type="checkbox" name="lang" value="go">Go</label>
+                <label><input type="checkbox" name="lang" value="shell">Shell</label>
+                <label><input type="checkbox" name="lang" value="other">Otro: <input type="text" name="other-lang" placeholder="Escribe aquí"></label>
+            </div>
+            <div>
+                <p>¿Algún comentario o sugerencia?</p>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ejemplo: ¿Cuanto dinero puedo ganar?"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
